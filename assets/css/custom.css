@@ -1,6 +1,8 @@
 body::before {
-    background: #040404 url("../img/bg.jpg") center no-repeat !important;
-    background-size: cover !important;
+        background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../img/Grad_back.jpg") center no-repeat !important;
+        background-size: cover !important;
 
   }
 
