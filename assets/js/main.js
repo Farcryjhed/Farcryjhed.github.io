@@ -251,3 +251,39 @@
   new PureCounter();
 
 })()
+
+
+// Lightbox with Keyboard Navigation
+document.addEventListener('DOMContentLoaded', function() {
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: true,
+    plyr: {
+      css: 'https://cdn.plyr.io/3.7.8/plyr.css',
+      js: 'https://cdn.plyr.io/3.7.8/plyr.js',
+      config: {
+        ratio: '16:9',
+        fullscreen: { enabled: true },
+        youtube: { noCookie: true },
+      }
+    }
+  });
+
+  // ESC key to close
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      lightbox.close();
+    }
+  });
+
+  // Arrow keys for navigation
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowRight') {
+      lightbox.nextSlide();
+    } else if (event.key === 'ArrowLeft') {
+      lightbox.prevSlide();
+    }
+  });
+});
