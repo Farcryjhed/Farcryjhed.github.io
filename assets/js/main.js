@@ -287,3 +287,58 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Store the last clicked portfolio link and scroll position
+  const detailsLinks = document.querySelectorAll('.details-link');
+  
+  detailsLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      // Get the portfolio item element
+      const portfolioItem = this.closest('.portfolio-item');
+      
+      if (portfolioItem) {
+        // Store the portfolio item's position/ID for later focus
+        const itemIndex = Array.from(document.querySelectorAll('.portfolio-item')).indexOf(portfolioItem);
+        sessionStorage.setItem('lastPortfolioItemIndex', itemIndex);
+        sessionStorage.setItem('lastPortfolioPage', 'index.html#portfolio');
+      }
+    });
+  });
+
+  // Back button functionality
+  const backLink = document.querySelector('.back-link');
+  if (backLink) {
+    backLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.6s ease-out';
+      
+      setTimeout(() => {
+        window.location.href = 'index.html#portfolio';
+      }, 300);
+    });
+  }
+
+  // On page load, scroll to the last clicked portfolio item
+  window.addEventListener('load', function() {
+    const lastItemIndex = sessionStorage.getItem('lastPortfolioItemIndex');
+    if (lastItemIndex !== null) {
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+      const lastItem = portfolioItems[lastItemIndex];
+      
+      if (lastItem) {
+        setTimeout(() => {
+          lastItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          lastItem.style.outline = '2px solid #0073ca';
+          lastItem.style.outlineOffset = '5px';
+          
+          setTimeout(() => {
+            lastItem.style.outline = 'none';
+          }, 2000);
+        }, 100);
+      }
+    }
+  });
+});
