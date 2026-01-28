@@ -344,6 +344,15 @@ main {
   filter: brightness(0) invert(1);
 }
 
+/* Ensure purecounter suffix is visible */
+.counts .count-box span::after {
+  content: attr(data-purecounter-suffix);
+}
+
+.purecounter {
+  white-space: nowrap;
+}
+
 
 
 
