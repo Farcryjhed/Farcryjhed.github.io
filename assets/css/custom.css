@@ -7,55 +7,157 @@ body::before {
   }
 
   @keyframes typeRightLeft {
-    0% {
-        content: "";
-    }
-    10% {
-        content: "U";
-    }
-    20% {
-        content: "Ur";
-    }
-    30% {
-        content: "Uri";
-    }
-    40% {
-        content: "Uriel";
-    }
-    50% {
-        content: "Uriel ";
-    }
-    60% {
-        content: "Uriel J";
-    }
-    70% {
-        content: "Uriel Jh";
-    }
-    80% {
-        content: "Uriel Jhe";
-    }
-    90% {
-        content: "Uriel Jhed";
-    }
-    100% {
-        content: "Uriel Jhed B. Cruzada";
-    }
+    /* Type "Web Developer" */
+    0% { content: ""; }
+    0.5% { content: "W"; }
+    1% { content: "We"; }
+    1.5% { content: "Web"; }
+    2% { content: "Web "; }
+    2.5% { content: "Web D"; }
+    3% { content: "Web De"; }
+    3.5% { content: "Web Dev"; }
+    4% { content: "Web Deve"; }
+    4.5% { content: "Web Devel"; }
+    5% { content: "Web Develo"; }
+    5.5% { content: "Web Developer"; }
+    8%, 10% { content: "Web Developer"; }
+    
+    /* Delete "Web Developer" */
+    10.5% { content: "Web Develope"; }
+    11% { content: "Web Develop"; }
+    11.5% { content: "Web Develo"; }
+    12% { content: "Web Devel"; }
+    12.5% { content: "Web Deve"; }
+    13% { content: "Web Dev"; }
+    13.5% { content: "Web De"; }
+    14% { content: "Web D"; }
+    14.5% { content: "Web "; }
+    15% { content: "Web"; }
+    15.5% { content: "We"; }
+    16% { content: "W"; }
+    16.5% { content: ""; }
+    
+    /* Type "GoHighLevel Funnel Specialist" */
+    17% { content: "G"; }
+    17.5% { content: "Go"; }
+    18% { content: "GoH"; }
+    18.5% { content: "GoHi"; }
+    19% { content: "GoHig"; }
+    19.5% { content: "GoHigh"; }
+    20% { content: "GoHighL"; }
+    20.5% { content: "GoHighLe"; }
+    21% { content: "GoHighLev"; }
+    21.5% { content: "GoHighLeve"; }
+    22% { content: "GoHighLevel"; }
+    22.5% { content: "GoHighLevel "; }
+    23% { content: "GoHighLevel F"; }
+    23.5% { content: "GoHighLevel Fu"; }
+    24% { content: "GoHighLevel Fun"; }
+    24.5% { content: "GoHighLevel Funn"; }
+    25% { content: "GoHighLevel Funne"; }
+    25.5% { content: "GoHighLevel Funnel"; }
+    26% { content: "GoHighLevel Funnel "; }
+    26.5% { content: "GoHighLevel Funnel S"; }
+    27% { content: "GoHighLevel Funnel Sp"; }
+    27.5% { content: "GoHighLevel Funnel Spe"; }
+    28% { content: "GoHighLevel Funnel Spec"; }
+    28.5% { content: "GoHighLevel Funnel Speci"; }
+    29% { content: "GoHighLevel Funnel Special"; }
+    29.5% { content: "GoHighLevel Funnel Specialis"; }
+    30% { content: "GoHighLevel Funnel Specialist"; }
+    33%, 35% { content: "GoHighLevel Funnel Specialist"; }
+    
+    /* Delete "GoHighLevel Funnel Specialist" */
+    35.5% { content: "GoHighLevel Funnel Specialst"; }
+    36% { content: "GoHighLevel Funnel Specialis"; }
+    36.5% { content: "GoHighLevel Funnel Speciali"; }
+    37% { content: "GoHighLevel Funnel Special"; }
+    37.5% { content: "GoHighLevel Funnel Specia"; }
+    38% { content: "GoHighLevel Funnel Spec"; }
+    38.5% { content: "GoHighLevel Funnel Spe"; }
+    39% { content: "GoHighLevel Funnel Sp"; }
+    39.5% { content: "GoHighLevel Funnel S"; }
+    40% { content: "GoHighLevel Funnel "; }
+    40.5% { content: "GoHighLevel Funnel"; }
+    41% { content: "GoHighLevel Funne"; }
+    41.5% { content: "GoHighLevel Funn"; }
+    42% { content: "GoHighLevel Fun"; }
+    42.5% { content: "GoHighLevel Fu"; }
+    43% { content: "GoHighLevel F"; }
+    43.5% { content: "GoHighLevel "; }
+    44% { content: "GoHighLevel"; }
+    44.5% { content: "GoHighLeve"; }
+    45% { content: "GoHighLev"; }
+    45.5% { content: "GoHighLe"; }
+    46% { content: "GoHighL"; }
+    46.5% { content: "GoHigh"; }
+    47% { content: "GoHig"; }
+    47.5% { content: "GoHi"; }
+    48% { content: "GoH"; }
+    48.5% { content: "Go"; }
+    49% { content: "G"; }
+    49.5% { content: ""; }
+    
+    /* Type "GoHighLevel Automation Developer" */
+    50% { content: "G"; }
+    50.5% { content: "Go"; }
+    51% { content: "GoH"; }
+    51.5% { content: "GoHi"; }
+    52% { content: "GoHig"; }
+    52.5% { content: "GoHigh"; }
+    53% { content: "GoHighL"; }
+    53.5% { content: "GoHighLe"; }
+    54% { content: "GoHighLev"; }
+    54.5% { content: "GoHighLeve"; }
+    55% { content: "GoHighLevel"; }
+    55.5% { content: "GoHighLevel "; }
+    56% { content: "GoHighLevel A"; }
+    56.5% { content: "GoHighLevel Au"; }
+    57% { content: "GoHighLevel Aut"; }
+    57.5% { content: "GoHighLevel Auto"; }
+    58% { content: "GoHighLevel Autom"; }
+    58.5% { content: "GoHighLevel Automa"; }
+    59% { content: "GoHighLevel Automat"; }
+    59.5% { content: "GoHighLevel Automati"; }
+    60% { content: "GoHighLevel Automatio"; }
+    60.5% { content: "GoHighLevel Automation"; }
+    61% { content: "GoHighLevel Automation "; }
+    61.5% { content: "GoHighLevel Automation D"; }
+    62% { content: "GoHighLevel Automation De"; }
+    62.5% { content: "GoHighLevel Automation Dev"; }
+    63% { content: "GoHighLevel Automation Deve"; }
+    63.5% { content: "GoHighLevel Automation Devel"; }
+    64% { content: "GoHighLevel Automation Develo"; }
+    64.5% { content: "GoHighLevel Automation Developer"; }
+    65% { content: "GoHighLevel Automation Developer"; }
+    100% { content: "GoHighLevel Automation Developer"; }
 }
 
-h1::before {
+h1 {
+  white-space: nowrap;
+}
+
+.typing-text::before {
   content: "";
   display: inline-block;
   white-space: nowrap;
-  animation: typeRightLeft 8s steps(8) infinite;
+  animation: typeRightLeft 25s steps(200) infinite;
 }
-h1::after {
-  content: "|"; /* The cursor character, you can change this */
+
+.typing-text::after {
+  content: "|";
   display: inline-block;
-  opacity: 0;
-  animation: blinkCursor 2s steps(2) infinite;
-  font-size: 80%; /* Make the cursor thinner */
-  color: green; /* Change the cursor color to green */
+  opacity: 1;
+  animation: blinkCursor 0.6s steps(2) infinite;
+  font-size: 120%;
+  color: green;
+  margin-left: 2px;
 }
+
+h1::after {
+  content: "";
+}
+
 @keyframes blinkCursor {
   0%, 100% {
       opacity: 0;
